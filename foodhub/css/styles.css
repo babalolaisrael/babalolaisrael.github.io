@@ -3,8 +3,12 @@ body{
     color: #fff;
 }
 h1{
-    font-size: 3.0rem;
+    font-size: 4.0rem;
     font-weight: 900;
+}
+p{
+    font-size:1.4rem;
+
 }
 
 /* Section */
@@ -251,7 +255,7 @@ li .order{
 
 /* Responsiveness */
 /* Mobile */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width:320px) and (max-width: 768px) {
     /* For mobile phones: */
     .hero-image{
         height: 80vh;
@@ -259,11 +263,14 @@ li .order{
     .hero-text {
         text-align: center;
         position: absolute;
-        top: 40%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, 0%);
         color: white;
         margin-bottom: 0;
+      }
+      .hero-text h1{
+          font-size: 4rem;
       }
       .container{
           margin-left: 20px;
